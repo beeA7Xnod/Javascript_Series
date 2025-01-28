@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor Using Function</title>
+</head>
+<body>
+  <p>Rock Paper Scissor</p>
+  <br>
+  <button onClick="
+  playGame('Rock');
+  ">Rock</button>
+
+  <button onclick="
+  playGame('Paper');
+  ">Paper</button>
+
+  <button onclick="
+  playGame('Scissor');
+  ">Scissor</button>
+  
+  <script>
+
+    function playGame(playerMove){
+      let computerMove=computerPick();
+      if(playerMove==='Scissor'){
+        if(computerMove=='Scissor'){
+            alert(`You:Scissor\nBot:${computerMove}\nGame Tied`);
+          }
+          else if(computerMove=='Rock'){
+            alert(`You:Scissor\nBot:${computerMove}\nYou Lost`);
+          }
+          else{
+            alert(`You:Scissor\nBot:${computerMove}\nYou won`);
+          }
+            }
+            else if(playerMove==='Paper'){
+              if(computerMove=='Paper'){
+                alert(`You:Paper\nBot:${computerMove}\nGame Tied`);
+              }
+              else if(computerMove=='Rock'){
+                alert(`You:Paper\nBot:${computerMove}\nYou won`);
+              }
+              else{
+                alert(`You:Paper\nBot:${computerMove}\nYou lost`);
+              }
+            }
+            else if(playerMove==='Rock'){
+              if(computerMove=='Rock'){
+                alert(`You:Rock\nBot:${computerMove}\nGame Tied.`);
+              }
+              else if(computerMove=='Paper'){
+                alert(`You:Rock\nBot:${computerMove}\nYou Lost`);
+              }
+              else{
+                alert(`You:Rock\nBot:${computerMove}\nYou won`);
+              }
+
+                        }
+      }
+      
+    function computerPick(){
+      let computerMove=Math.random();
+      if(computerMove<=0.33){
+        return "Rock";
+      }
+      else if(computerMove>=0.66){
+        return "Scissor";
+      }
+      else{
+        return "Paper";
+      }
+    }
+  </script>
+
+</body>
+</html>

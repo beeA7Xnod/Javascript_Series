@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolean and If Statements</title>
+</head>
+<body>
+  
+  <script>
+    console.log(3<5);
+    console.log(5<3);
+    let a=true;
+    let b=false;
+    console.log(typeof(a));
+    console.log(typeof(b));
+
+    console.log(5=="5"); //checks only value
+    console.log(5==="5"); //checks datatype and value
+
+
+    // If else statements
+
+    if(true)
+  {
+    console.log("Hello,world.");
+  }
+  if(false)
+  {
+    console.log("Hello,Earth.");
+  }
+  if(1)
+  {
+    console.log('Hello, world');
+  }
+
+
+  // eligible to drive
+
+  let age=30;
+  if(age>=18)
+  {
+    console.log("You are eligible to drive");
+  }
+  else{
+    console.log("You are not eligible to drive.");
+  }
+
+  let age1=15;
+  if(age1>=18)
+  {
+    console.log("You are eligible to drive");
+  }
+  else{
+    console.log("You are not eligible to drive.");
+  }
+
+  // Logical Operators
+
+  // AND Operator
+  console.log(true && true);
+  console.log(true && false);
+  console.log(false && false);
+
+  // OR Operator
+  console.log(true||true);
+  console.log(true||false);
+  console.log(false||false);
+
+  //NOT Operator
+  console.log(!true);
+  console.log(!false);
+  console.log(!true && !false);
+  console.log(!true || !false);
+  console.log(!true && !false);
+
+  // Truthy and Falsy Value
+  if(20){
+    console.log("This is truthy value."); // Output displays on console
+  }
+  if(0)
+  {
+    console.log("This is falsy value.");//Output doesn't display on console
+  }
+
+  let cartQuantity=5;
+  if(cartQuantity){
+    console.log("Cart has products.");
+  }
+
+  console.log("Binod"/5); // NaN (Not a Number)
+  let name;
+  console.log(name); // Displays undefined as value is not defined
+
+  //Ternary Operator
+  let result=true? "Binod" : "Acharya";
+  console.log(result);
+
+  let result1=false? "Binod" : "Acharya";
+  console.log(result1);
+
+  //Guard Operator(&&)
+  let message=true && "Binod Acharya";
+  console.log(message);
+  let message1=false && "Binod Acharya";
+  console.log(message1);
+
+  //Default Operator
+  let currency="EUR" || "USD";
+  console.log(currency);
+  let currency1="" || "USD";
+  console.log(currency1);
+
+
+  </script>
+
+</body>
+</html>

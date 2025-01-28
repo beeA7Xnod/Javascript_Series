@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+
+  <script>
+    //Creating an object
+    const animal={
+      name:'Dog',
+      age:5,
+      sound:'Bark'
+    };
+
+    //accessing object and object property value
+    console.log(animal);
+    console.log(typeof(animal));
+    console.log(animal.name);
+    console.log(animal.age);
+    console.log(animal.sound);
+
+    //Changing value in property value
+    animal.age=10;
+    console.log(animal);
+
+    //adding a new property in object
+    animal.habitat='kennel';
+    console.log(animal);
+
+    //deleting a property from the object
+    delete animal.sound;
+    console.log(animal);
+
+
+
+  </script>
+  
+</body>
+</html>

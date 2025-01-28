@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+</head>
+<body>
+  
+  <script>
+
+    //Creating a function
+    function message(){
+      console.log("Hello,World");
+      console.log(5+5);
+    }
+
+    //Calling a function
+    message();
+    message();
+    message();
+
+    //Creating a function 
+    function name()
+    {
+      console.log("Binod Acharya");
+    }
+
+    //Calling a function
+    name();
+    name();
+
+    //Calling a function
+    function calculateTax(){
+      console.log(2000*0.1);
+    }
+
+    calculateTax();
+
+    //Parametric Functions
+    function totalTax(cost){
+      console.log(cost*0.1);
+    }
+
+    totalTax(2000);
+    totalTax(5000);
+
+    //Parametric function with default arguments
+    function taxable(cost,tax=0.1){
+      console.log(cost*tax);
+    }
+    taxable(5000,0.2);
+    taxable(5000);
+
+  </script>
+
+</body>
+</html>

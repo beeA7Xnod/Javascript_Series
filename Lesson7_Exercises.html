@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    
+    // 7(a)
+    function greet(){
+      console.log("Hello.");
+    }
+    greet();
+    greet();
+
+    //7(b) & (c)
+    function greet1(name='there'){
+      console.log(`Hello, ${name}.`);
+    }
+    greet1('Binod');
+    greet1("Hari");
+    greet1();
+
+    //7(d)
+    function convertToFahrenheit(celsius){
+      console.log((celsius*9/5)+32);
+    }
+    convertToFahrenheit(25);
+
+    //7(e)
+    function convertToCelsius(fahrenheit){
+      console.log((fahrenheit-32)*5/9);
+    }
+    convertToCelsius(86);
+
+    //7(f)
+    function convertTemperature(degrees,unit){
+      if(unit==="C"){
+        return `${((degrees*9/5)+32)}F`;
+      }
+      else{
+        return `${((degrees-32)*5/9)}C`;
+      }
+    }
+    convertTemperature(25,"C");
+    convertTemperature(86,"F");
+
+    //7(g)
+    function convertLength(length,from,to){
+      if(from==="km" && to==="km"){
+        console.log(`${length} km`);
+      }
+      else if(from==="miles" && to==="km"){
+        console.log(`${length*1.6} km`);
+      }
+      else if(from==='km' && to==='miles'){
+        console.log(`${length/1.6} miles`);
+      }
+    else{
+      console.log("Invalid Input of Unit.");
+    }
+    }
+    convertLength(50,'miles','km');
+    convertLength(32,'km','miles');
+    convertLength(50,'km','km');
+
+  </script>
+
+</body>
+</html>

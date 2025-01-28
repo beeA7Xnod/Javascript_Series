@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=Head, initial-scale=1.0">
+  <title>Head or Tail</title>
+</head>
+<body>
+  <p>Head or Tail Game</p>
+
+  <button onclick="
+  if(Math.random()<=0.5){
+    let guess='Head';
+    alert(`It\'s a ${guess}.\nWell done.`);
+  }
+  else{
+    let guess='Tail';
+    alert(`It\'s a ${guess}.\nTry Again.`);
+  }
+  ">Head</button>
+
+  <button onclick="
+  if(Math.random()>0.5){
+   let guess='Tail';
+    alert(`It\'s a ${guess}.\nWell Done.`);
+  }
+  else{
+   let guess='Head';
+    alert(`It\'s a Head.\n Try Again.`);
+  }
+  ">Tail</button>
+
+  <script>
+    
+  </script>
+
+</body>
+</html>

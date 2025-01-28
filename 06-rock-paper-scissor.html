@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <p>Rock Paper Scissor</p>
+  <br>
+  <button onclick="
+  let rock=Math.random();
+    if(rock<=0.333)
+    {
+      alert('You:Rock\nBot:Rock.\nGame Tied.');
+    }
+    else if(rock>=0.667)
+    {
+      alert('You:Rock\nBot:Scissor\nYou Won.');
+    }
+    else{
+      alert('You:Rock.\nBot:Paper.\nYou Lost.');
+    }
+  ">Rock</button>
+
+  <button onclick="
+  let paper=Math.random();
+  if(paper<=0.333)
+  {
+    alert('You:Paper\nBot:Rock\nYou Won.');
+  }
+  else if(paper>=0.666)
+  {
+    alert('You:Paper.\nBot:Scissor.\nYou Lost.');
+  }
+  else{
+    alert('You:Paper.\nBot:Paper.\nGame Tied.');
+  }
+  ">Paper</button>
+
+  <button onclick="
+    let scissor=Math.random();
+    if(scissor<=0.333)
+    {
+      alert('You:Scissor.\nBot:Rock.\nYou Lost.');
+    }
+    else if(scissor>=0.666)
+    {
+      alert('You:Scissor.\nBot:Scissor.\nGame Tied.');
+    }
+    else{
+      alert('You:Scissor.\nBot:Paper.\nYou won.');
+    }
+
+  ">Scissor</button>
+  
+  <script>
+
+  </script>
+
+</body>
+</html>
