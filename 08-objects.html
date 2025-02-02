@@ -8,6 +8,7 @@
 <body>
 
   <script>
+
     //Creating an object
     const animal={
       name:'Dog',
@@ -35,6 +36,14 @@
     console.log(animal);
 
 
+    // Converting Javascript object to JSON
+    console.log(JSON.stringify(animal));
+
+    // Saving JSON object to a variable
+    const JSONString=JSON.stringify(animal);
+
+    // Converting JSON to Javascript Object
+    console.log(JSON.parse(JSONString));
 
   </script>
   
