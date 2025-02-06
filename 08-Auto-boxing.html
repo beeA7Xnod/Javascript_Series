@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Boxing in JS</title>
+</head>
+<body>
+  
+  <script>
+    // Auto-boxing in JavaScript
+    console.log('Binod'.length);
+    console.log('Binod Acharya'.toUpperCase());
+
+    //Objects are actually references
+    const obj1={
+      name:'Binod'
+    };
+
+    //Assigning the references to another variable
+    const obj2=obj1;
+
+    //proprty can can be changed even 'const' is used in object
+    obj1.name='Acharya';
+    console.log(obj1);
+    console.log(obj2);
+
+    const obj3={
+      message:'Acharya'
+    };
+
+    //Reason is that we are comparing the references rather than the property values of the object
+    console.log(obj1===obj2);
+    console.log(obj1===obj3);
+
+
+  </script>
+
+</body>
+</html>
