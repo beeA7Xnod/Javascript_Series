@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Shortcuts</title>
+</head>
+<body>
+  
+  <script>
+
+    //Creating an object
+  const person={
+    name:'Binod',
+    age:23,
+    height:6.0
+  };
+
+  /*
+  // Simple way of taking out property from the object
+  const name=person.name;
+  const age=person.age;
+  const height=person.height;
+
+  console.log(name);
+  console.log(age);
+  console.log(height);
+  */
+
+  // Object shortcut to destructuring the object
+  const {name,age,height}=person;
+  console.log(name);
+  console.log(age);
+  console.log(height);
+  </script>
+
+</body>
+</html>
