@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM in JS</title>
+</head>
+<body>
+
+  <button>hello</button>
+
+  <script>
+
+    //getting the body of html through DOM
+    document.body.innerHTML='Hello';
+    console.log(document.body);
+
+    //getting the title of htmnl through DOM
+    document.title='DOM in JAVASCRIPT';
+    console.log(document.title);
+
+    //Html elements are converted into JS objects in DOM
+    console.log(typeof (document.body));
+
+    //innerHTML property gives access to body element of html
+    console.log(document.body.innerHTML);
+    document.body.innerHTML='Changed Body';
+
+    //html code can also be use in innerHTMl 
+    document.body.innerHTML='<button>Learning DOM</button>';
+
+    
+
+  </script>
+
+</body>
+</html>
