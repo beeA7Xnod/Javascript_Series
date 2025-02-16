@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <button>Hello</button>
+
+  <script>
+    //querySelector let html elements to use in javascript
+    let a=document.querySelector('button');
+    console.log(a);
+
+    //using innerHTML property of document object
+    let b=document.querySelector('button').innerHTML;
+    console.log(b);
+
+    //changing HTML content using JS innerHTML property
+    document.querySelector('button')
+      .innerHTML='Changed using JS querySelector';
+
+  </script>
+
+</body>
+</html>
