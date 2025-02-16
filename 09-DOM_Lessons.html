@@ -8,6 +8,7 @@
 <body>
 
   <button>Hello</button>
+  <button class="js-button">second button</button>
 
   <script>
     //querySelector let html elements to use in javascript
@@ -21,6 +22,13 @@
     //changing HTML content using JS innerHTML property
     document.querySelector('button')
       .innerHTML='Changed using JS querySelector';
+
+    //selecting html element classwise using querySelector
+    let buttonElement=document.querySelector('.js-button');
+    console.log(buttonElement);
+
+    //changing content in html elements using classSelector
+    document.querySelector('.js-button').innerHTML="changed button using classSelector"
 
   </script>
 
