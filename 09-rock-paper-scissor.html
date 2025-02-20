@@ -3,9 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Rock Paper Scissors using DOM</title>
 </head>
 <body>
-  
+  <p>Rock Paper Scissors</p>
+
+  <button onclick="playGame('rock')">Rock</button>
+  <button onclick="playGame('paper')">Paper</button>
+  <button onclick="playGame('scissor')">Scissor</button>
+
+  <p class="js-result"></p>
+
+  <button onclick="resetGame()">Reset Score</button>
+
+  <script>
+    function computerPick() {
+      let randomValue = Math.random();
+      if (randomValue <= 0.33) {
+        return "rock";
+      } else if (randomValue <= 0.66) {
+        return "paper";
+      } else {
+        return "scissor";
+      }
+    }
+
+    function playGame(humanPick) {
+      let computerChoice = computerPick(); 
+      let result = "";
+
+      if (computerChoice === humanPick) {
+        result = "It's a tie.";
+      } else if (
+        (humanPick === 'rock' && computerChoice === 'scissor') ||
+        (humanPick === 'paper' && computerChoice === 'rock') ||
+        (humanPick === 'scissor' && computerChoice === 'paper')
+      ) {
+        result = "You win!";
+      } else {
+        result = "You lose!";
+      }
+
+      document.querySelector('.js-result').innerHTML = 
+        `You picked ${humanPick}, computer picked ${computerChoice}. ${result}`;
+    }
+
+    function resetGame() {
+      document.querySelector('.js-result').innerHTML = "";
+    }
+  </script>
+
 </body>
 </html>
